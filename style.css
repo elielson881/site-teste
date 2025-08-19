@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 🔹 Fundo com imagem */
+  background: url("plano de fundo.png") no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* 🔹 Overlay escuro para legibilidade */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* camada preta transparente */
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+/* 🔹 Card com efeito vidro */
+.lockscreen {
+  text-align: center;
+  padding: 30px 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  width: 320px;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+  color: #fff;
+}
+
+/* 🔹 Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+  transition: 0.3s;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 12px #ff6ec7;
+}
+
+/* 🔹 Botão com gradiente */
+.unlock-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff6ec7, #8e2de2);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.unlock-btn:hover {
+  background: linear-gradient(45deg, #ff89d6, #a13aed);
+  box-shadow: 0 0 15px #ff6ec7, 0 0 25px #8e2de2;
+}
+
+/* 🔹 Mensagem de erro/sucesso */
+#msg {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}

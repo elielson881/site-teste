@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("as-dunas-de-areia-se-elevam-em-ia-generativa-tranquila-em-preto-e-branco.jpg") no-repeat center center/cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #ff6ec7;
+}
+
+.kits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 25px;
+}
+
+.kit-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.kit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff6ec7;
+}
+
+.kit-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.kit-card p {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff6ec7;
+}
+
+.buy-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff6ec7, #8e2de2);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: linear-gradient(45deg, #ff89d6, #a13aed);
+  box-shadow: 0 0 15px #ff6ec7;
+}
