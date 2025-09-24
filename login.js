@@ -19,7 +19,7 @@ loginForm.addEventListener("submit", function(e){
     msg.style.color = "lightgreen";
 
     setTimeout(() => {
-      window.location.href = "dashboard.html";
+      window.location.href = "in2dex.html";
     }, 1000);
 
   } else {
@@ -29,3 +29,4 @@ loginForm.addEventListener("submit", function(e){
 
   loginForm.reset();
 });
+
