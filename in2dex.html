@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Nexus</title>
+  <!-- Tailwind CDN (rápido para protótipo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Pequeno ajuste para o fundo gradient parecer contínuo na barra superior */
+    body { background: linear-gradient(to bottom, #5a0000 0%, #3b0000 100%); }
+  </style>
+</head>
+<body class="min-h-screen text-gray-100 font-sans">
+
+  <!-- Variável: troque pelo link real do seu Discord -->
+  <script>
+    const DISCORD_INVITE = "https://discord.gg/SEU_CONVITE_AQUI";
+    // substitua acima pelo link real
+  </script>
+
+  <div class="min-h-screen bg-gradient-to-b from-red-900 via-red-800 to-red-900 text-gray-100">
+    <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center text-2xl font-bold">N</div>
+        <div>
+          <h1 class="text-xl font-extrabold">A Nexus</h1>
+          <p class="text-sm text-gray-300">Comunidade | Eventos | Ajuda</p>
+        </div>
+      </div>
+      <nav class="flex items-center gap-4">
+        <a href="#features" class="text-sm hover:underline">Recursos</a>
+        <a href="#events" class="text-sm hover:underline">Eventos</a>
+        <a href="#kits" class="text-sm hover:underline">Kits</a>
+        <a href="#rules" class="text-sm hover:underline">Regras</a>
+        <a id="join-server" href="#" class="ml-4 inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold">Entrar no servidor</a>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6">
+      <!-- Banner principal -->
+      <div class="w-full rounded-xl overflow-hidden mb-8">
+        <img src="https://cdn.discordapp.com/attachments/1379255421059076233/1417299628713316443/standard_1.gif?ex=68d13ae3&is=68cfe963&hm=bcf1101f0612fde4a92959e9ffc0efe7e2f82e5614f0e475a6b80f440f87f858" alt="Banner Nexus" class="w-full h-64 object-cover" />
+      </div>
+
+      <!-- Hero -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-12">
+        <div>
+          <h2 class="text-4xl lg:text-5xl font-extrabold leading-tight">Bem-vindo à <span class="text-red-400">A Nexus</span></h2>
+          <p class="mt-4 text-gray-300 max-w-xl">Um espaço amigável para jogadores, criadores e entusiastas — eventos semanais, canais de ajuda, parcerias e muito mais. Junte-se à comunidade e faça parte da Nexus.</p>
+
+          <div class="mt-6 flex gap-3">
+            <a id="hero-discord" href="#" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-3 rounded-lg font-semibold">Entrar no Discord</a>
+            <a href="#features" class="inline-flex items-center gap-2 border border-gray-700 px-4 py-3 rounded-lg text-sm">Ver recursos</a>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-tr from-red-800 to-red-700 rounded-xl p-6 shadow-xl">
+          <div class="h-64 rounded-md overflow-hidden">
+            <img src="https://cdn.discordapp.com/attachments/1379255421059076236/1417680714882613430/standard_4.gif?ex=68d14c4d&is=68cffacd&hm=b9c99d895b5586629f5fb3beb4f415c8e133a4168a7c28f59d3ee5109eef590c" alt="Banner Secundário" class="w-full h-full object-cover" />
+          </div>
+          <div class="mt-4">
+            <h3 class="font-bold">IP do Servidor</h3>
+            <p class="text-sm text-gray-300 mt-2">IP: <span class="text-white font-semibold">nexus.blazebr.com</span> | Porta: <span class="text-white font-semibold">26063</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kits -->
+      <section id="kits" class="py-10">
+        <h3 class="text-2xl font-bold mb-6">Kits disponíveis</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- KitCard -->
+          <div class="bg-gray-800/60 p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <img src="https://cdn.discordapp.com/attachments/1418416912445997106/1418802121331052574/image.png?ex=68d0c371&is=68cf71f1&hm=f4147ea04f4123391ef94dbdb7bb7a33ad3a39afdd5279493858117cf5a6f7ac" alt="KIT DIAMOND BASIC" class="w-full h-40 object-contain rounded-md mb-4 bg-gray-900" />
+            <h4 class="font-semibold text-lg text-center">KIT DIAMOND BASIC</h4>
+            <p class="mt-2 text-red-400 font-bold">R$ 6,99</p>
+          </div>
+
+          <div class="bg-gray-800/60 p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <img src="https://cdn.discordapp.com/attachments/1418416912445997106/1418802429151154227/image.png?ex=68d0c3bb&is=68cf723b&hm=d40e81c70b34141ac3b477c576837d49b01c4d1cd06ad973fe68c974c628be74" alt="KIT DIAMOND ULTRA" class="w-full h-40 object-contain rounded-md mb-4 bg-gray-900" />
+            <h4 class="font-semibold text-lg text-center">KIT DIAMOND ULTRA</h4>
+            <p class="mt-2 text-red-400 font-bold">R$ 11,99</p>
+          </div>
+
+          <div class="bg-gray-800/60 p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <img src="https://cdn.discordapp.com/attachments/1418416912445997106/1418802836979847229/image.png?ex=68d0c41c&is=68cf729c&hm=cbfb9e9145122025057ee17b6da6e47eea47348ab1b81b7dfbabbdaf90db4a6a" alt="KIT BASIC NETHERITE" class="w-full h-40 object-contain rounded-md mb-4 bg-gray-900" />
+            <h4 class="font-semibold text-lg text-center">KIT BASIC NETHERITE</h4>
+            <p class="mt-2 text-red-400 font-bold">R$ 14,99</p>
+          </div>
+
+          <div class="bg-gray-800/60 p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <img src="https://cdn.discordapp.com/attachments/1418416912445997106/1418803169231769620/image.png?ex=68d0c46b&is=68cf72eb&hm=38a2fc2a5ed52502c7637b3d12bcc743b85d2a6ddc90b927c2c53d9c58ef6949" alt="KIT MEGA NETHERITE" class="w-full h-40 object-contain rounded-md mb-4 bg-gray-900" />
+            <h4 class="font-semibold text-lg text-center">KIT MEGA NETHERITE</h4>
+            <p class="mt-2 text-red-400 font-bold">R$ 17,99</p>
+          </div>
+
+          <div class="bg-gray-800/60 p-4 rounded-xl shadow-lg flex flex-col items-center">
+            <img src="https://cdn.discordapp.com/attachments/1418416912445997106/1418803472702111814/image.png?ex=68d0c4b3&is=68cf7333&hm=7788d79c5c65235b6690de59b705fd8cd2d5bb7b3cf6801e649a9793db301511" alt="KIT ULTRA NETHERITE" class="w-full h-40 object-contain rounded-md mb-4 bg-gray-900" />
+            <h4 class="font-semibold text-lg text-center">KIT ULTRA NETHERITE</h4>
+            <p class="mt-2 text-red-400 font-bold">R$ 20,98</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Regras -->
+      <section id="rules" class="py-10">
+        <h3 class="text-2xl font-bold mb-4">Diretrizes Semi-Anarquia</h3>
+        <div class="w-full rounded-xl overflow-hidden mb-6">
+          <img src="https://cdn.discordapp.com/attachments/1417212515712110592/1417220744810725507/standard.gif?ex=68d0f16c&is=68cf9fec&hm=fc0c46338c25c19b3854f6697c67f9352bc9bb88ec24322b6010876a75506f38" alt="Banner Regras" class="w-full h-48 object-cover" />
+        </div>
+        <ul class="space-y-3 text-gray-300">
+          <li>✅ Griefing Permitido — Base destruída? Recomece e vingue-se. Faz parte do jogo.</li>
+          <li>✅ Roubos são permitidos — O mundo é hostil. Fique mais forte!</li>
+          <li>✅ Sem Proteções — Tudo pode ser invadido. Use estratégias para se defender!</li>
+          <li>🚫 Sem Hacks ou Cheats — Uso de hack, x-ray, autoclick ou texturas proibido.</li>
+          <li>🚫 Sem Ofensas — Ofensas, preconceito ou comportamento tóxico não serão tolerados.</li>
+          <li>🚫 Spam e Flood — Divulgação de outros servidores proibida.</li>
+          <li>🚫 Sem Reembolso — Admins não reembolsam itens perdidos.</li>
+        </ul>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-10 flex items-center justify-center">
+        <div class="w-full max-w-3xl bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-center shadow-2xl">
+          <h4 class="text-2xl font-bold">Pronto para entrar?</h4>
+          <p class="text-gray-100 mt-2">Venha para A Nexus — comunidade acolhedora e ativa.</p>
+          <div class="mt-6">
+            <a id="cta-discord" href="#" class="inline-block px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg">Entrar no Discord</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-12 py-8 border-t border-red-800">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="text-sm text-gray-400">© <span id="year"></span> A Nexus — Todos os direitos reservados</div>
+        <div class="flex items-center gap-4">
+          <a id="footer-discord" href="#" class="text-sm hover:underline">Link do servidor</a>
+          <a href="#rules" class="text-sm hover:underline">Regras</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // JS simples para ligar os botões ao link do Discord definido acima
+    const discordLinks = [
+      document.getElementById('join-server'),
+      document.getElementById('hero-discord'),
+      document.getElementById('cta-discord'),
+      document.getElementById('footer-discord')
+    ];
+    discordLinks.forEach(a => {
+      if (!a) return;
+      a.setAttribute('href', DISCORD_INVITE);
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noreferrer');
+    });
+
+    // ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
